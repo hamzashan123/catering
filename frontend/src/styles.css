@@ -1,0 +1,1532 @@
+body {
+  margin: 0;
+  background: #f4f7fb;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e7f0ff, #f8fbff);
+}
+
+.login-card {
+  width: 420px;
+  max-width: 92%;
+  padding: 32px;
+}
+
+.center-box {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-shell {
+  display: flex;
+}
+
+.topbar {
+  z-index: 1300 !important;
+}
+
+.brand-title {
+  font-weight: 900 !important;
+  color: #0f5ca8;
+}
+
+.main-content {
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 28px;
+  overflow: auto;
+}
+
+.page-title {
+  font-weight: 900 !important;
+  margin-bottom: 24px !important;
+}
+
+.content-card,
+.stat-card {
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(20, 40, 80, 0.08) !important;
+}
+
+.narrow-card {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.upload-box {
+  border: 2px dashed #9fb3c8;
+  border-radius: 18px;
+  min-height: 230px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #f8fbff;
+}
+
+.form-footer,
+.table-actions,
+.inline-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.user-form {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(130px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.sortable-cell {
+  cursor: pointer;
+  font-weight: 800 !important;
+  white-space: nowrap;
+}
+
+.table-image {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.print-page {
+  padding: 30px;
+  background: white;
+}
+
+.stock-header {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 18px 0;
+  margin-bottom: 16px;
+}
+
+.stock-image {
+  width: 310px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.stock-info {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+}
+
+.activity-table td,
+.activity-table th {
+  border: 1px solid #222;
+  height: 32px;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    padding: 18px;
+  }
+
+  .form-footer,
+  .table-actions,
+  .inline-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .user-form {
+    grid-template-columns: 1fr;
+  }
+
+  .stock-header {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .MuiAppBar-root,
+  .MuiDrawer-root,
+  button {
+    display: none !important;
+  }
+
+  .main-content,
+  .print-page {
+    padding: 0 !important;
+  }
+}
+
+/* Updated black / white dashboard look with blue and red actions */
+body {
+  background: #f3f4f6;
+  color: #101828;
+}
+
+.topbar.MuiAppBar-root {
+  background: #0b0f19 !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16) !important;
+}
+
+.MuiDrawer-paper {
+  background: #ffffff !important;
+  border-right: 1px solid #e5e7eb !important;
+}
+
+.brand-title {
+  color: #0b0f19 !important;
+  letter-spacing: 0.4px;
+}
+
+.MuiListItemButton-root {
+  margin: 4px 10px !important;
+  border-radius: 12px !important;
+}
+
+.MuiListItemButton-root:hover {
+  background: #f2f4f7 !important;
+}
+
+.MuiListItemIcon-root {
+  min-width: 40px !important;
+  color: #344054 !important;
+}
+
+.page-heading-row,
+.table-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.black-chip.MuiChip-root {
+  background: #0b0f19;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.content-card,
+.stat-card,
+.bookin-image-card,
+.bookin-details-card {
+  border-radius: 22px !important;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 18px 50px rgba(16, 24, 40, 0.08) !important;
+}
+
+.bookin-form-grid {
+  margin-bottom: 26px !important;
+}
+
+.bookin-image-card,
+.bookin-details-card {
+  height: 100%;
+  background: #ffffff !important;
+}
+
+.stock-code-panel {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #0b0f19;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.stock-code-panel .MuiTypography-colorTextSecondary {
+  color: #d0d5dd !important;
+}
+
+.main-image-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f2f4f7;
+  border: 1px solid #e5e7eb;
+  cursor: zoom-in;
+}
+
+.main-image-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.image-click-hint {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(11, 15, 25, 0.78);
+  color: #ffffff;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+.image-thumb-strip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 14px 2px 10px;
+  scrollbar-width: thin;
+}
+
+.image-thumb,
+.empty-thumb {
+  width: 76px;
+  height: 58px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f2f4f7;
+  border: 2px solid #e5e7eb;
+}
+
+.image-thumb {
+  padding: 0;
+  cursor: pointer;
+}
+
+.image-thumb.active {
+  border-color: #005da8;
+  box-shadow: 0 0 0 3px rgba(0, 93, 168, 0.16);
+}
+
+.image-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.upload-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.blue-button.MuiButton-contained,
+.MuiButton-containedPrimary {
+  background: #005da8 !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 18px rgba(0, 93, 168, 0.24) !important;
+  font-weight: 800 !important;
+}
+
+.blue-button.MuiButton-contained:hover,
+.MuiButton-containedPrimary:hover {
+  background: #004b87 !important;
+}
+
+.MuiButton-outlinedError,
+.MuiIconButton-colorError {
+  color: #c9182b !important;
+  border-color: #c9182b !important;
+}
+
+.MuiButton-containedError,
+.red-button.MuiButton-contained {
+  background: #c9182b !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  font-weight: 800 !important;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root {
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.form-footer {
+  border-top: 1px solid #eaecf0;
+  padding-top: 18px;
+}
+
+.latest-bookin-card {
+  margin-top: 28px;
+}
+
+.table-wrap {
+  border-radius: 16px !important;
+  overflow-x: auto;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  background: #0b0f19;
+  color: #ffffff;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.MuiTableBody-root .MuiTableRow-root:hover {
+  background: #f8fafc;
+}
+
+.table-image {
+  width: 86px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.image-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.image-dialog-body {
+  padding: 18px;
+  background: #0b0f19;
+  text-align: center;
+}
+
+.image-dialog-body img {
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+@media (max-width: 700px) {
+  .page-heading-row,
+  .table-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .upload-actions {
+    flex-direction: column;
+  }
+
+  .upload-actions .MuiButton-root {
+    width: 100%;
+  }
+}
+
+/* Reference style Book In layout */
+.bookin-reference-layout {
+  align-items: stretch;
+  margin-bottom: 28px !important;
+}
+
+.bookin-photo-card,
+.reference-form-card {
+  height: 100%;
+  border-radius: 18px !important;
+  background: #ffffff !important;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0 14px 34px rgba(16, 24, 40, 0.08) !important;
+}
+
+.client-heading {
+  font-weight: 900 !important;
+  text-align: center;
+  margin-bottom: 4px !important;
+}
+
+.stock-code-heading {
+  font-weight: 500 !important;
+  margin-bottom: 14px !important;
+}
+
+.reference-main-image {
+  border-radius: 4px;
+  border: none;
+  background: #d8d8d8;
+}
+
+.reference-thumb-strip {
+  padding-top: 18px;
+}
+
+.reference-thumb-strip .image-thumb,
+.reference-thumb-strip .empty-thumb {
+  width: 70px;
+  height: 58px;
+  border-radius: 8px;
+  background: #eeeeee;
+}
+
+.reference-form-card {
+  background: #eeeeee !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.reference-form-card .MuiTextField-root .MuiOutlinedInput-root {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.dimension-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.bookin-radio-group {
+  width: 100%;
+  margin-top: 4px !important;
+}
+
+.bookin-radio-group .MuiFormLabel-root {
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 2px;
+}
+
+.bookin-radio-group .MuiFormGroup-root {
+  justify-content: space-around;
+}
+
+.bookin-radio-group .MuiRadio-root.Mui-checked {
+  color: #d0021b !important;
+}
+
+.notes-area {
+  margin-top: 8px !important;
+}
+
+.notes-area .MuiOutlinedInput-root {
+  border-radius: 4px !important;
+}
+
+.fields-card .MuiTableCell-root {
+  vertical-align: middle;
+}
+
+.image-button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.slider-dialog-body {
+  position: relative;
+  min-height: 72vh;
+  background: #0b0f19;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 70px;
+}
+
+.slider-dialog-body img {
+  max-width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.slider-arrow {
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff !important;
+  color: #0b0f19 !important;
+  z-index: 2;
+}
+
+.slider-arrow.left { left: 16px; }
+.slider-arrow.right { right: 16px; }
+
+.dialog-thumbs {
+  padding: 14px 18px;
+  background: #ffffff;
+}
+
+.print-report-page {
+  background: #ffffff;
+  padding: 18px 24px;
+  color: #000000;
+  width: 794px;
+  min-height: 1123px;
+  box-sizing: border-box;
+}
+
+.print-report-title {
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+}
+
+.print-filter-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 620px;
+  gap: 8px 70px;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.print-report-item {
+  display: grid;
+  grid-template-columns: 175px 1fr 235px;
+  gap: 18px;
+  border-top: 2px solid #111;
+  padding: 8px 0 7px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.print-report-item:last-child {
+  border-bottom: 2px solid #111;
+}
+
+.print-report-image-box img {
+  width: 175px;
+  height: 118px;
+  object-fit: cover;
+}
+
+.print-report-details,
+.print-report-status {
+  line-height: 1.45;
+  text-align: center;
+}
+
+.print-report-status {
+  border-left: 2px solid #444;
+  min-height: 88px;
+  padding-left: 18px;
+}
+
+.print-stock-line {
+  border-top: 1px solid #111;
+  margin-top: 6px;
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+@media print {
+  .print-report-page {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+
+  .print-report-item {
+    break-inside: avoid;
+  }
+}
+
+/* Final records/search/print fixes */
+.table-search-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.table-image {
+  object-fit: contain !important;
+  background: #f8fafc;
+}
+
+.print-report-image-box {
+  width: 175px;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.print-report-image-box img {
+  width: 175px;
+  height: 118px;
+  object-fit: contain !important;
+  display: block;
+}
+
+.stock-print-header {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 34px !important;
+}
+
+.stock-print-image-wrap {
+  width: 330px;
+  height: 210px;
+  flex: 0 0 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.stock-image {
+  width: 330px !important;
+  height: 210px !important;
+  object-fit: contain !important;
+  display: block;
+}
+
+.stock-print-info {
+  text-align: center;
+  flex: 1;
+  padding-top: 4px;
+}
+
+.stock-print-info p {
+  margin: 7px 0;
+}
+
+@media print {
+  .stock-print-header {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 34px !important;
+  }
+
+  .stock-print-image-wrap {
+    width: 330px !important;
+    height: 210px !important;
+    flex: 0 0 330px !important;
+  }
+
+  .stock-image {
+    width: 330px !important;
+    height: 210px !important;
+    object-fit: contain !important;
+  }
+
+  .print-report-image-box img {
+    object-fit: contain !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .table-search-actions {
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .table-search-actions .MuiTextField-root,
+  .table-search-actions .MuiButton-root {
+    width: 100%;
+  }
+}
+
+.dimensions-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+  color: #344054;
+}
+
+.dialog-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-top: 10px !important;
+}
+
+@media (max-width: 700px) {
+  .dialog-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+  }
+}
+
+.print-label-title {
+  font-weight: 700 !important;
+  margin-bottom: 18px !important;
+}
+
+.stock-label-item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 28px;
+}
+
+.stock-label-item + .stock-label-item {
+  border-top: 2px solid #111;
+  padding-top: 24px;
+}
+
+@media print {
+  .print-label-title {
+    margin-bottom: 14px !important;
+  }
+
+  .stock-label-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+/* v7: Print Labels should match single print stock layout, one full page per record */
+.stock-print {
+  background: #ffffff;
+}
+
+.stock-label-item {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin-bottom: 0 !important;
+  padding-bottom: 22px;
+  break-after: page;
+  page-break-after: always;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.stock-label-item:last-child {
+  break-after: auto;
+  page-break-after: auto;
+}
+
+.stock-label-item + .stock-label-item {
+  border-top: none !important;
+  padding-top: 0 !important;
+}
+
+.stock-label-item .activity-table {
+  margin-top: 12px;
+}
+
+@media print {
+  .stock-label-item {
+    min-height: 100vh;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .stock-label-item:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}
+
+/* v8: PDF download pages only. Print Labels / print-stock print flow is unchanged. */
+.pdf-download-status {
+  padding: 14px 18px;
+  font-weight: 700;
+  color: #101828;
+}
+
+.pdf-a4-page {
+  width: 794px;
+  min-height: 1123px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.pdf-label-pages {
+  width: 794px;
+  background: #ffffff;
+}
+
+.pdf-label-pages .stock-label-item {
+  width: 794px;
+  min-height: 1123px;
+  padding: 30px;
+}
+
+/* v9: PDF generation workspace is hidden from the user view only. */
+.pdf-render-workspace {
+  position: fixed;
+  left: -12000px;
+  top: 0;
+  width: 794px;
+  background: #ffffff;
+  z-index: -1;
+}
+
+
+/* v10: Search results action buttons + PDF image/title fixes */
+.report-action-buttons {
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  margin-top: 12px !important;
+  margin-bottom: 14px !important;
+  flex-wrap: wrap;
+}
+
+.report-action-buttons .MuiButton-root {
+  border-radius: 10px !important;
+  padding: 8px 15px !important;
+  font-weight: 800 !important;
+  text-transform: none !important;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12) !important;
+  min-width: 132px;
+}
+
+.report-action-buttons .label-print-button {
+  background: #144c9a !important;
+  color: #ffffff !important;
+}
+
+.report-action-buttons .label-download-button {
+  background: #0f766e !important;
+  color: #ffffff !important;
+}
+
+.report-action-buttons .report-print-button {
+  background: #1d4ed8 !important;
+  color: #ffffff !important;
+}
+
+.report-action-buttons .report-download-button {
+  background: #15803d !important;
+  color: #ffffff !important;
+}
+
+.pdf-render-workspace img {
+  object-fit: contain !important;
+}
+
+.pdf-render-workspace .stock-print-image-wrap img,
+.pdf-render-workspace .print-report-image-box img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+}
+
+.pdf-render-workspace .stock-label-item {
+  padding-top: 30px !important;
+}
+
+@media (max-width: 700px) {
+  .report-action-buttons .MuiButton-root {
+    width: 100%;
+  }
+}
+
+.image-thumb-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.image-remove-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  border-radius: 50%;
+  background: #d32f2f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.22);
+  z-index: 2;
+}
+
+.image-remove-btn:hover {
+  background: #b71c1c;
+}
+
+/* v16: Label activity table column widths and full-page height */
+.stock-label-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-label-item .activity-table {
+  width: 100%;
+  table-layout: fixed;
+  flex: 1 1 auto;
+  height: calc(100vh - 285px);
+  margin-bottom: 0 !important;
+}
+
+.stock-label-item .activity-table th:nth-child(1),
+.stock-label-item .activity-table td:nth-child(1) {
+  width: 60%;
+}
+
+.stock-label-item .activity-table th:nth-child(2),
+.stock-label-item .activity-table td:nth-child(2),
+.stock-label-item .activity-table th:nth-child(3),
+.stock-label-item .activity-table td:nth-child(3) {
+  width: 20%;
+}
+
+.stock-label-item .activity-table tbody tr {
+  height: calc((100vh - 345px) / 16);
+}
+
+.pdf-label-pages .stock-label-item .activity-table {
+  height: 815px;
+}
+
+.pdf-label-pages .stock-label-item .activity-table tbody tr {
+  height: 48px;
+}
+
+@media print {
+  .stock-label-item .activity-table {
+    height: calc(100vh - 285px);
+  }
+
+  .stock-label-item .activity-table tbody tr {
+    height: calc((100vh - 345px) / 16);
+  }
+}
+
+
+/* v17: Print Labels page-break fix only. Download Labels CSS stays unchanged. */
+@media print {
+  .stock-print:not(.pdf-label-pages) {
+    padding: 0 !important;
+  }
+
+  .stock-print:not(.pdf-label-pages) .stock-label-item {
+    min-height: 0 !important;
+    height: 94vh !important;
+    max-height: 94vh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    break-after: page !important;
+    page-break-after: always !important;
+  }
+
+  .stock-print:not(.pdf-label-pages) .stock-label-item:last-child {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+
+  .stock-print:not(.pdf-label-pages) .stock-header {
+    flex: 0 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  .stock-print:not(.pdf-label-pages) .activity-table {
+    flex: 1 1 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    table-layout: fixed !important;
+    margin-bottom: 0 !important;
+  }
+
+  .stock-print:not(.pdf-label-pages) .activity-table tbody tr {
+    height: auto !important;
+  }
+}
+
+
+/* Report layout adjustment: keep SC / Date In / 30 Days aligned across the lower row */
+.print-report-item {
+  display: grid;
+  grid-template-columns: 200px minmax(275px, 1fr) 220px;
+  grid-template-areas:
+    "reportImage reportDetails reportStatus"
+    "reportImage reportMeta reportMeta";
+  gap: 0 18px;
+  align-items: center;
+  border-top: 2px solid #111;
+  padding: 8px 0 5px;
+  font-size: 18px;
+}
+
+.print-report-image-box {
+  grid-area: reportImage;
+  width: 200px;
+  height: 155px;
+}
+
+.print-report-image-box img {
+  width: 200px;
+  height: 155px;
+  object-fit: contain !important;
+}
+
+.print-report-details {
+  grid-area: reportDetails;
+  padding: 0 8px;
+}
+
+.print-report-status {
+  grid-area: reportStatus;
+  border-left: 2px solid #444;
+  min-height: 86px;
+  padding-left: 16px;
+}
+
+.print-report-meta {
+  grid-area: reportMeta;
+  border-top: 1px solid #111;
+  padding-top: 8px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: left;
+}
+
+@media print {
+  .print-report-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    grid-template-columns: 200px minmax(275px, 1fr) 220px;
+  }
+}
+
+/* v20: Print/Download Report alignment fix - keep detail/status rows on one line */
+.print-report-item {
+  grid-template-columns: 175px 335px 205px !important;
+  gap: 0 15px !important;
+  font-size: 16.5px !important;
+  align-items: center !important;
+}
+
+.print-report-image-box {
+  width: 175px !important;
+  height: 135px !important;
+}
+
+.print-report-image-box img {
+  width: 175px !important;
+  height: 135px !important;
+  object-fit: contain !important;
+}
+
+.print-report-details,
+.print-report-status {
+  text-align: left !important;
+  line-height: 1.45 !important;
+  overflow: visible !important;
+}
+
+.print-report-details > div,
+.print-report-status > div {
+  white-space: nowrap !important;
+}
+
+.print-report-details b {
+  display: inline-block !important;
+  width: 145px !important;
+  margin-right: 8px !important;
+  text-align: right !important;
+  font-weight: 600 !important;
+}
+
+.print-report-status {
+  min-height: 88px !important;
+  padding-left: 16px !important;
+}
+
+.print-report-status b {
+  display: inline-block !important;
+  width: 85px !important;
+  margin-right: 8px !important;
+  text-align: right !important;
+  font-weight: 600 !important;
+}
+
+.print-report-meta {
+  gap: 24px !important;
+  font-size: 19px !important;
+  white-space: nowrap !important;
+}
+
+@media print {
+  .print-report-item {
+    grid-template-columns: 175px 335px 205px !important;
+    gap: 0 15px !important;
+    font-size: 16.5px !important;
+  }
+}
+
+/* v21: Final alignment fixes for reports and stock labels */
+.print-filter-summary {
+  max-width: 1000px !important;
+  width: 100% !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 12px 90px !important;
+  font-size: 20px !important;
+  margin: 6px 0 34px !important;
+}
+
+.print-filter-summary > div {
+  display: grid !important;
+  grid-template-columns: 170px 1fr !important;
+  column-gap: 18px !important;
+  align-items: baseline !important;
+  white-space: nowrap !important;
+}
+
+.print-filter-summary b {
+  text-align: right !important;
+  font-weight: 500 !important;
+}
+
+.print-filter-summary span {
+  text-align: left !important;
+}
+
+.print-report-page {
+  padding: 18px 20px !important;
+}
+
+.print-report-item {
+  grid-template-columns: 150px 370px 196px !important;
+  gap: 0 15px !important;
+  font-size: 15.5px !important;
+  padding: 7px 0 5px !important;
+  align-items: center !important;
+}
+
+.print-report-image-box {
+  width: 150px !important;
+  height: 122px !important;
+}
+
+.print-report-image-box img {
+  width: 150px !important;
+  height: 122px !important;
+  object-fit: contain !important;
+}
+
+.print-report-details,
+.print-report-status {
+  text-align: left !important;
+  line-height: 1.42 !important;
+}
+
+.print-report-details > div,
+.print-report-status > div {
+  display: grid !important;
+  align-items: baseline !important;
+  column-gap: 8px !important;
+  white-space: nowrap !important;
+}
+
+.print-report-details > div {
+  grid-template-columns: 130px 1fr !important;
+}
+
+.print-report-status > div {
+  grid-template-columns: 82px 1fr !important;
+}
+
+.print-report-details b,
+.print-report-status b {
+  width: auto !important;
+  margin-right: 0 !important;
+  text-align: right !important;
+  font-weight: 600 !important;
+}
+
+.print-report-details span,
+.print-report-status span {
+  text-align: left !important;
+  overflow: visible !important;
+}
+
+.print-report-status {
+  min-height: 86px !important;
+  padding-left: 14px !important;
+}
+
+.print-report-meta {
+  gap: 26px !important;
+  font-size: 18px !important;
+  padding-top: 7px !important;
+  margin-top: 7px !important;
+}
+
+.pdf-report-page {
+  overflow: hidden !important;
+  break-after: page !important;
+  page-break-after: always !important;
+}
+
+.pdf-report-page:last-child {
+  break-after: auto !important;
+  page-break-after: auto !important;
+}
+
+.stock-print-info {
+  text-align: left !important;
+}
+
+.stock-print-info p {
+  display: grid !important;
+  grid-template-columns: 185px 1fr !important;
+  column-gap: 14px !important;
+  align-items: baseline !important;
+  margin: 6px 0 !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+}
+
+.stock-print-info p strong {
+  text-align: right !important;
+  font-weight: 600 !important;
+}
+
+.stock-print-info .MuiTypography-root {
+  text-align: center !important;
+  margin-top: 8px !important;
+}
+
+@media print {
+  .print-filter-summary {
+    font-size: 20px !important;
+    gap: 12px 90px !important;
+    margin-bottom: 34px !important;
+  }
+
+  .print-report-item {
+    grid-template-columns: 150px 370px 196px !important;
+    gap: 0 15px !important;
+    font-size: 15.5px !important;
+  }
+
+  .print-report-image-box,
+  .print-report-image-box img {
+    width: 150px !important;
+    height: 122px !important;
+  }
+
+  .stock-print-info p {
+    display: grid !important;
+    grid-template-columns: 185px 1fr !important;
+    column-gap: 14px !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* v26: Print Labels + Download Labels spacing/alignment update */
+.stock-print-header {
+  gap: 28px !important;
+}
+
+.stock-print-image-wrap {
+  width: 300px !important;
+  height: 195px !important;
+  flex: 0 0 300px !important;
+}
+
+.stock-image {
+  width: 300px !important;
+  height: 195px !important;
+  object-fit: contain !important;
+}
+
+.stock-print-info p {
+  grid-template-columns: 170px minmax(0, 1fr) !important;
+  column-gap: 12px !important;
+  font-size: 22px !important;
+}
+
+.stock-print-info p span {
+  min-width: 0 !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+}
+
+.stock-print-info .stock-category-line {
+  margin-top: -2px !important;
+}
+
+.stock-print-info .MuiTypography-root {
+  white-space: nowrap !important;
+  font-size: 31px !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+}
+
+.pdf-label-pages .stock-print-image-wrap {
+  width: 300px !important;
+  height: 195px !important;
+  flex-basis: 300px !important;
+}
+
+.pdf-label-pages .stock-image {
+  width: 300px !important;
+  height: 195px !important;
+}
+
+.pdf-label-pages .stock-print-info p {
+  grid-template-columns: 170px minmax(0, 1fr) !important;
+  font-size: 22px !important;
+}
+
+@media print {
+  .stock-print-header {
+    gap: 28px !important;
+  }
+
+  .stock-print-image-wrap {
+    width: 300px !important;
+    height: 195px !important;
+    flex: 0 0 300px !important;
+  }
+
+  .stock-image {
+    width: 300px !important;
+    height: 195px !important;
+  }
+
+  .stock-print-info p {
+    grid-template-columns: 170px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    font-size: 22px !important;
+  }
+
+  .stock-print-info .MuiTypography-root {
+    font-size: 31px !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* v27: charge date/report updates */
+.alert-error,
+.alert-success {
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: #b42318;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background: #ecfdf3;
+  color: #027a48;
+  border: 1px solid #bbf7d0;
+}
+
+.reset-charge-date-field {
+  min-width: 180px !important;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.print-report-status {
+  line-height: 1.28 !important;
+  min-height: 104px !important;
+}
+
+.print-report-status > div {
+  grid-template-columns: 86px 1fr !important;
+}
+
+.print-report-status b {
+  font-size: 15px !important;
+}
+
+.print-report-status span {
+  font-size: 15px !important;
+}
+
+@media print {
+  .print-report-status {
+    line-height: 1.25 !important;
+  }
+}
+
+/* v28: LF logo on dashboard and report title */
+.page-title-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.page-title-with-logo .page-title {
+  margin-bottom: 0 !important;
+}
+
+.page-title-with-logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.print-report-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.print-report-title-wrap img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+}
+
+.print-report-title-wrap .print-report-title {
+  margin-bottom: 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px;
+}
+
+@media print {
+  .page-title-with-logo img,
+  .print-report-title-wrap img {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
